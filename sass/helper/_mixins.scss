@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin font($type) {
+
+    @if $type == 'heading' {
+        font-size: 24px;
+        font-weight: 600;
+    } @else if $type == 'standard' {
+        font-size: 14px;
+        font-weight: 400;
+    } @else if $type == 'standard-bold' {
+        font-size: 14px;
+        font-weight: 700;
+    } 
+}
